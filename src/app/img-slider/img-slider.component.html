@@ -1,0 +1,6 @@
+<p>img-slider works!</p>
+<div>
+  <app-img-slide [src]="imgList[currentSrc]"></app-img-slide>
+  <button *ngIf="currentSrc>0" (click)="changePicture(currentSrc-1)">Previous</button>
+  <button *ngIf="currentSrc<imgList.length-1" (click)="changePicture(currentSrc+1)">Next</button>
+</div>
